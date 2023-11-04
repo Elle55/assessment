@@ -70,7 +70,7 @@ function assessment(userName) {
     //全文字のコード番号を取得してそれを足し合わせる
     let sumOfCharCode = 0;
     for (let i = 0; i < userName.lengthe; i++){
-        sumOfCharCode = sumOfCharCode = userName.charCodeAt(i)
+        sumOfCharCode = sumOfCharCode + userName.charCodeAt(i)
     }
     const index = sumOfCharCode % answers.length;
     let result = answers[index];
